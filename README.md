@@ -5,7 +5,8 @@ This repository features a fine-tuned version of the google/umt5-small model, ad
 
 Despite being based on the small variant of the mT5 model (~60M parameters), this model achieves strong performance on standard summarization benchmarks, making it a practical choice for low-resource or memory-constrained environments. It is particularly effective for processing news articles, long-form documents, and informational texts, and producing meaningful summaries that retain the essence of the original input.
 
-**The training pipeline includes advanced techniques such as gradient accumulation, learning rate scheduling, and early stopping, ensuring stable convergence. Although label smoothing is not explicitly implemented in the code, the model is designed with training stability and generalization in mind, making it suitable for real-world summarization applications in Turkish NLP.**
+The training pipeline includes advanced techniques such as gradient accumulation, learning rate scheduling, and early stopping, ensuring stable convergence. Although label smoothing is not explicitly implemented in the code, the model is designed with training stability and generalization in mind, making it suitable for real-world summarization applications in Turkish NLP.
+
 ---
 ## 🔍 Metric Interpretation (Specific to Turkish)
 
@@ -49,6 +50,7 @@ Gradient Accumulation to simulate larger batch sizes on limited GPUs
 ROUGE & METEOR Evaluation tailored for morphologically rich languages like Turkish
 
 Early Stopping to avoid overfitting
+
 ---
 
 | Metric  | Score  | Acceptable Range | Interpretation                       |
